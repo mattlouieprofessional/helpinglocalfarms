@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Non-Profit Case Competition</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --main-pink: #ffafcc;
+            --soft-pink: #fde2e4;
+            --deep-pink: #fb6f92;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, var(--soft-pink) 0%, #fad0c4 100%);
+            color: #4a4a4a;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(10px);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .logo {
+            font-weight: 600;
+            font-size: 1.5rem;
+            color: var(--deep-pink);
+        }
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #555;
+            font-weight: 400;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--deep-pink);
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 10%;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            color: var(--deep-pink);
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+
+        .btn {
+            background-color: var(--deep-pink);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(251, 111, 146, 0.4);
+        }
+
+        .container {
+            padding: 50px 10%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.6);
+            padding: 30px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.8);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        .card h3 {
+            color: var(--deep-pink);
+            margin-bottom: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">VisionPink</div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#mission">Mission</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Empowering Change</h1>
+        <p>This is a placeholder for your case competition tagline. Make it catchy, inspiring, and impactful for your non-profit goal.</p>
+        <a href="#" class="btn">Learn More</a>
+    </section>
+
+    <div class="container" id="about">
+        <div class="card">
+            <h3>The Problem</h3>
+            <p>Describe the challenge your non-profit is facing or the specific issue your case competition is addressing.</p>
+        </div>
+        <div class="card">
+            <h3>Our Solution</h3>
+            <p>Highlight your team's innovative approach, key metrics, and why your strategy will succeed.</p>
+        </div>
+        <div class="card">
+            <h3>Impact</h3>
+            <p>Show the judges the numbers. How many lives are changed? What is the long-term sustainability?</p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Case Competition Team. Built with heart and a lot of pink.
+    </footer>
+
+</body>
+</html>
