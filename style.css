@@ -1,0 +1,128 @@
+/* Color Variables for easy editing */
+:root {
+    --main-pink: #ffafcc;
+    --soft-pink: #fde2e4;
+    --deep-pink: #fb6f92;
+    --white: #ffffff;
+    --text-gray: #4a4a4a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, var(--soft-pink) 0%, #fad0c4 100%);
+    color: var(--text-gray);
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* Navigation Header */
+header {
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.logo {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--deep-pink);
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #555;
+    font-weight: 400;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--deep-pink);
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 10%;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    color: var(--deep-pink);
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.05);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+/* Buttons */
+.btn {
+    background-color: var(--deep-pink);
+    color: white;
+    padding: 12px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(251, 111, 146, 0.3);
+}
+
+/* Card Grid Layout */
+.container {
+    padding: 50px 10%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.6);
+    padding: 40px;
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    background: rgba(255, 255, 255, 0.9);
+    transform: scale(1.02);
+}
+
+.card h3 {
+    color: var(--deep-pink);
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 60px 20px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
